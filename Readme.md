@@ -13,3 +13,11 @@ curl -X POST -H "Content-Type: application/json" -d '{"name":"krishna"}' http://
 
 in windows powershell curl might not work, try below
 Invoke-RestMethod -Method Post -Uri http://localhost:9080/api/echo -Headers @{"Content-Type" = "application/json"} -Body '{"key":"value"}'
+----------------------
+AWS EKS commands
+docker build -t my-repo .
+
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+
+kubectl get services
